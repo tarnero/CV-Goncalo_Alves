@@ -1,0 +1,325 @@
+<!-- PARA CONVERT ISTO EM PDF, USAR https://www.sejda.com/html-to-pdf . PRIMEIRO É PRECISO FAZER UPLOAD PARA UMA CDN -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CV Gonçalo Alves</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Inter:wght@100..900&display=swap");
+
+      :root {
+        --main-color: #155e9d;
+      }
+
+      * {
+        font-family: "Assistant", sans-serif;
+        font-size: 15px;
+      }
+
+      body,
+      h5,
+      h6,
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .curriculum-vitae {
+        display: flex;
+      }
+
+      .curriculum-vitae__main {
+        width: 80%;
+        padding: 0 32px 24px 32px;
+      }
+
+      .curriculum-vitae__header {
+        background-color: var(--main-color);
+        padding: 48px 0 4px 8px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 42px;
+      }
+
+      .curriculum-vitae__sections {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 12px;
+        color: #535353;
+      }
+
+      .curriculum-vitae__section {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .curriculum-vitae__main-title {
+        background-color: #e1dede;
+        padding: 2px 8px;
+        text-transform: uppercase;
+        font-size: 22px;
+        color: var(--main-color);
+      }
+
+      .curriculum-vitae__info {
+        padding-left: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .curriculum-vitae__info-block {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        > ul {
+          list-style: disc;
+          padding-left: 14px;
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+        }
+      }
+
+      .curriculum-vitae__divider {
+        background-color: #e1dede;
+        height: 1px;
+      }
+
+      .curriculum-vitae__languages {
+        display: flex;
+        gap: 12px;
+
+        > :first-child {
+          padding-right: 16px;
+          border-right: 1px solid #e1dede;
+        }
+      }
+
+      .curriculum-vitae__personal {
+        width: 20%;
+        background-color: var(--main-color);
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .curriculum-vitae__personal-section {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+      }
+
+      .curriculum-vitae__personal-title {
+        text-transform: uppercase;
+        background-color: white;
+        padding-block: 8px;
+        padding-inline: 18px;
+        color: var(--main-color);
+        font-size: 18px;
+      }
+
+      .curriculum-vitae__contact {
+        padding-left: 18px;
+        color: white;
+
+        > li {
+          display: flex;
+          gap: 4px;
+          margin-block: 4px;
+        }
+      }
+
+      .curriculum-vitae__icon {
+        width: 16px;
+        height: 16px;
+        margin-top: 4px;
+      }
+
+      .curriculum-vitae__skills {
+        list-style: disc;
+        padding-left: 34px;
+        color: white;
+        text-transform: uppercase;
+
+        > li {
+          margin-block: 4px;
+        }
+      }
+
+      .curriculum-vitae__foto {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        object-position: 0px -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="curriculum-vitae">
+      <div class="curriculum-vitae__main">
+        <div class="curriculum-vitae__header">
+          Olá, o meu nome é Gonçalo Ribeiro Alves
+        </div>
+        <div class="curriculum-vitae__sections">
+          <div class="curriculum-vitae__section">
+            <h5 class="curriculum-vitae__main-title">Sumário Profissional</h5>
+            <div class="curriculum-vitae__info">
+              <div>
+                Procuro uma oportunidade profissional na área da
+                <b>Mecatrónica</b>, com a possibilidade de realizar um estágio
+                profissional, que me permita aplicar e desenvolver os meus
+                conhecimentos técnicos, adquirir experiência prática em contexto
+                real de trabalho e contribuir de forma ativa para o crescimento
+                e inovação da organização.
+              </div>
+              <div>
+                Desenvolvi vários trabalhos/projetos utilizando tecnologias como
+                <b>Fusion 360</b>, <b>LabView</b>, <b>Python</b>,
+                <b>Cx-Programmer</b>, <b>Matlab</b> e <b>CoopeliaSlim</b>.
+              </div>
+            </div>
+          </div>
+          <div class="curriculum-vitae__section">
+            <h5 class="curriculum-vitae__main-title">Habilidades Técnicas</h5>
+            <div class="curriculum-vitae__info">
+              <div class="curriculum-vitae__info-block">
+                <div>
+                  <b>Universidade do Minho</b>, Braga, Portugal, Setembro 2020 -
+                  Maio 2026
+                </div>
+                <b>Mestrado Integrado em Sistemas Mecatrônicos</b>
+                <ul>
+                  <li>Software de Modelação (Fusion 360)</li>
+                  <li>
+                    Desenvolvimento de Aplicações para Automação (LabVIEW)
+                  </li>
+                  <li>Programação em Python</li>
+                  <li>Programação e Configuração de PLCs (Cx-Programmer)</li>
+                  <li>Programação em MatLab</li>
+                  <li>Programação de Braços Robóticos (CoopeliaSim)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="curriculum-vitae__section">
+            <h5 class="curriculum-vitae__main-title">Educação</h5>
+            <div class="curriculum-vitae__info">
+              <div class="curriculum-vitae__info-block">
+                <div>Maio 2026</div>
+                <div>
+                  <b>Mestrado em Sistemas Mecatrônicos</b> na Universidade do
+                  Minho, Braga, Portugal
+                </div>
+                <ul>
+                  <li>
+                    Título da Dissertação -
+                    <b
+                      >Implementação de um Sistema de Visão para Controlo de
+                      Qualidade de Montagem de Agulhas de Teste</b
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="curriculum-vitae__divider"></div>
+              <div class="curriculum-vitae__info-block">
+                <div>Maio 2026</div>
+                <div>
+                  <b>Mestrado Integrado em Engenharia Mecânica</b> na
+                  Universidade do Minho, Braga, Portugal
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="curriculum-vitae__section">
+            <h5 class="curriculum-vitae__main-title">Linguagem</h5>
+            <div class="curriculum-vitae__info">
+              <div class="curriculum-vitae__languages">
+                <div>
+                  <h6>Inglês</h6>
+                  <div>Avançado (C2 - EF SET Certificate)</div>
+                </div>
+                <div>
+                  <h6>Português</h6>
+                  <div>Nativo</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="curriculum-vitae__personal">
+        <img class="curriculum-vitae__foto" src="cvFoto.png" alt="Cv profile" />
+        <div class="curriculum-vitae__personal-section">
+          <h6 class="curriculum-vitae__personal-title">Contacto</h6>
+          <ul class="curriculum-vitae__contact">
+            <li>
+              <img
+                src="phone.svg"
+                class="curriculum-vitae__icon"
+                alt="phone number"
+              />
+              <div>910902237</div>
+            </li>
+            <li>
+              <img
+                src="envelope.svg"
+                class="curriculum-vitae__icon"
+                alt="email"
+              />
+              <div>goncalo.r.alves@hotmail.com</div>
+            </li>
+            <li>
+              <img
+                src="linkedin.svg"
+                class="curriculum-vitae__icon"
+                alt="linkedin"
+              />
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/ricardo-alves-48844a186"
+                  style="color: white; text-decoration: none"
+                  >linkedin.com/in/gonçaloalves50</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="curriculum-vitae__personal-section">
+          <h6 class="curriculum-vitae__personal-title">
+            Competências Técnicas
+          </h6>
+          <ul class="curriculum-vitae__skills">
+            <li>Fusion 360</li>
+            <li>LabView</li>
+            <li>Python</li>
+            <li>Cx-Programmer</li>
+            <li>Matlab</li>
+            <li>CoopeliaSlim</li>
+          </ul>
+        </div>
+        <div class="curriculum-vitae__personal-section">
+          <h6 class="curriculum-vitae__personal-title">
+            Competências de Trabalho
+          </h6>
+          <ul class="curriculum-vitae__skills">
+            <li>Proatividade</li>
+            <li>Resiliência</li>
+            <li>Trabalho em Equipa</li>
+            <li>Comunicação</li>
+            <li>Resolução de Problemas</li>
+            <li>Aprendizagem Rápida</li>
+            <li>Boa Organização</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
